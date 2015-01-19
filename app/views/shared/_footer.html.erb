@@ -1,0 +1,172 @@
+<footer>
+
+<div class="container text-center">
+
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="col-md-3">
+        <ul class="nav nav-pills nav-stacked">
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <ul class="nav nav-pills nav-stacked">
+          <li><a href="#">Product for Mac</a></li>
+          <li><a href="#">Product for Windows</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <ul class="nav nav-pills nav-stacked">
+          <li><a href="#">Web analytics</a></li>
+          <li><a href="#">Presentations</a></li>          
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <ul class="nav nav-pills nav-stacked">
+          <li><a href="#">Product Help</a></li>
+          <li><a href="#">Developer API</a></li>
+        </ul>
+      </div>  
+    </div>
+  </div>
+  <hr>
+    <div class="row">
+        <div class="col-lg-12">
+            <ul class="nav nav-pills nav-justified">
+                <li><a href="/">© 2013 Company Name.</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Privacy</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+</footer>
+
+
+
+<div class="container">
+   
+   
+    <!-- Modal -->
+    <div class="modal fade" id="primary" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header modal-header-primary text-center">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h1>Contact Us</h1>
+                </div>
+                <div class="modal-body">
+
+             
+                  
+                  <% @contact = Contact.new %>
+                 
+ <%= simple_form_for :contact, url: '/contact', input_html: {style: "margin: 0 auto"}, multipart: true, method: :post, action: :create, controller: :contact do |t| %>
+
+ 
+
+
+    <div class="row-fluid">
+        <div class="col-md-12">
+            <div class="well well-sm">
+           
+                    <fieldset>
+                      
+
+                        <div class="form-group">
+                            <div class="col-md-12">
+         <%= t.input :name, label: false, input_html: {class: 'form-control input-lg'}, placeholder: 'Full name' %>
+                            </div>
+                        </div>
+                      
+
+                        <div class="form-group">
+                         
+                            <div class="col-md-12">
+         <%= t.input :email, label: false, input_html: {class: 'form-control input-lg'}, placeholder: 'Email address' %>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md-12">
+          <%= t.input :phone, label: false, input_html: {class: 'form-control input-lg'}, placeholder: 'Phone number' %>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                          <%= t.input :message, label: false, input_html: {class: 'form-control text-area'} %>
+
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div clsas="col-md-12">
+                               
+                                  <%= t.input :file, as: :file, label: false, input_html: {class: 'file-field'} %>
+
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md-12 text-center">
+                                <%= t.submit "Send Mail", class: 'button' %>
+                            </div>
+                        </div>
+                        
+                    </fieldset>
+            </div>
+        </div>
+    </div>
+
+
+
+ <% end %>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+               
+
+                </div>
+                <div class="modal-footer">
+           
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+    <!-- Modal -->
+</div>
+

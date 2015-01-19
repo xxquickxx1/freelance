@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Slidebar Links Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+     <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <%= javascript_include_tag 'application' %>
+ <%=  javascript_include_tag "vendor/modernizr" %>
+  <%= csrf_meta_tags %>
+  </head>
+  
+  <body class="prices">  
+<%= cms_toolbar %>
+      
+
+
+
+
+
+
+
+
+<div class="carousel fade-carousel slide" data-ride="carousel" data-interval="6000" id="bs-carousel">
+  <!-- Overlay --><div class="">
+  <%= render 'shared/nav' %>
+  </div>
+  <div class="overlay"></div>
+
+ 
+  
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner"> 
+   
+    
+
+    
+    <div class="item slides active">
+      <div class="slide-3"></div>
+      <div class="hero">        
+        <hgroup>
+            <h1>Prices</h1>        
+            
+        </hgroup><br><br>
+         
+      </div>
+    </div>
+  </div> 
+</div>
+
+
+
+  <div class="row-fluid">
+<div class="container text-center" style="margin-top:80px; margin-bottom:80px;">
+<h3>Our prices</h3>
+    <p>
+    A certified translation of a one page document usually costs £20 - £30, depending on word count and language required.<br> Just send us a scan of the document you need translating and we’ll get back to you as soon we can with a competitive quote. 
+    </p>
+
+  </div>
+    
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- container -->
+
+<a id="back-to-top" href="#" class=" styled-link-invert btn-lg back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><span class="fa fa-chevron-up"></span></a>
+      
+</div>
+
+
+
+
+
+<%= render partial: 'shared/footer' %>
+<div id="myModal" class="reveal-modal" data-reveal>
+
+</div>
+
+  </body>
+</html>
+

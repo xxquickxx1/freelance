@@ -1,0 +1,156 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Slidebar Links Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+     <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <%= javascript_include_tag 'application' %>
+ <%=  javascript_include_tag "vendor/modernizr" %>
+  <%= csrf_meta_tags %>
+  </head>
+  
+  <body class="testimonials">  
+<%= cms_toolbar %>
+      
+
+
+
+
+
+
+
+
+<div class="carousel fade-carousel slide" data-ride="carousel" data-interval="6000" id="bs-carousel">
+  <!-- Overlay --><div class="">
+  <%= render 'shared/nav' %>
+  </div>
+  <div class="overlay"></div>
+
+ 
+  
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner"> 
+   
+    
+
+    
+    <div class="item slides active">
+      <div class="slide-3"></div>
+      <div class="hero">        
+        <hgroup>
+            <h1>Testimonials</h1>        
+            <h3>See what our customers say about us</h3>
+        </hgroup><br><br>
+         
+      </div>
+    </div>
+  </div> 
+</div>
+
+
+
+
+<div class="container" style="margin-top:80px;">
+  <div class="row">
+    <div class='col-md-offset-2 col-md-8 text-center'>
+    <h2>Our Customers</h2>
+    <h2><small>Read what just a few of our satisfied customers have to say about our official translation service.</small>
+    </h2>
+    </div>
+  </div>
+  <div class='row' style="margin-bottom:80px;">
+    <div class='col-md-offset-2 col-md-8'>
+      <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+        <!-- Bottom Carousel Indicators -->
+
+        <!-- Carousel Slides / Quotes -->
+        <div class="carousel-inner">
+        
+          <!-- Quote 1 -->
+          <div class="item active">
+            <blockquote>
+              <div class="row">
+                <div class="col-sm-2 text-center">
+                 
+                </div>
+                <div class="col-sm-9">
+                  <p>I am so glad I came across this site. The service was excellent, quality was superb, replies were very quick and not to mention the price was fantastic! I will definitely use their certified translation service again in the future. Highly recommended</p>
+                  <small>Fiel Pascual (Maersk)</small>
+                </div>
+              </div>
+            </blockquote>
+          </div>
+          <!-- Quote 2 -->
+          
+
+          <div class="item">
+            <blockquote>
+              <div class="row">
+                <div class="col-sm-2 text-center">
+                 
+                </div>
+                <div class="col-sm-9">
+                  <p>The certified translation group were just what I needed when it came to translating the certificates and reports I needed for visa applications. Speedy turnaround and a recognized official translation. Many thanks for your help!</p>
+                  <small>Clara Aymat (Red Cross) </small>
+                </div>
+              </div>
+            </blockquote>
+          </div>
+
+          <div class="item">
+            <blockquote>
+              <div class="row">
+                <div class="col-sm-2 text-center">
+                 
+                </div>
+                <div class="col-sm-9">
+                  <p>I needed urgent official translations for Italian documents going to the UK.  Not only did I receive the translations very quickly, but at a very reasonable price too.  I would highly recommend their services and when required, will certainly use them again without question</p>
+                  <small>C O’Connor</small>
+                </div>
+              </div>
+            </blockquote>
+          </div>
+         
+
+        </div>
+        
+        <!-- Carousel Buttons Next/Prev -->
+        <a data-slide="prev" href="#quote-carousel" class="left carousel-control"><i class="fa fa-chevron-left"></i></a>
+        <a data-slide="next" href="#quote-carousel" class="right carousel-control"><i class="fa fa-chevron-right"></i></a>
+      </div>                          
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- container -->
+
+<a id="back-to-top" href="#" class=" styled-link-invert btn-lg back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><span class="fa fa-chevron-up"></span></a>
+      
+</div>
+
+
+
+
+
+<%= render partial: 'shared/footer' %>
+<div id="myModal" class="reveal-modal" data-reveal>
+
+</div>
+
+  </body>
+</html>
+
