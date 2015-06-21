@@ -20,8 +20,8 @@ test:
 
 production: 
   adapter: postgresql
-    encoding: unicode
-    database: freelance_production
-    pool: 5
-    username: 
-    password: 
+  encoding: unicode
+  database: freelance_production
+  pool: 5
+  username: 
+  password: 
