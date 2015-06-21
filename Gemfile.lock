@@ -78,6 +78,8 @@ GEM
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
+    meta-tags (2.0.0)
+      actionpack (>= 3.0.0)
     mime-types (1.25.1)
     multi_json (1.10.1)
     paperclip (3.0.4)
@@ -86,6 +88,7 @@ GEM
       activesupport (>= 3.0.0)
       cocaine (>= 0.0.2)
       mime-types
+    pg (0.17.1)
     polyglot (0.3.5)
     rack (1.4.5)
     rack-cache (1.2)
@@ -102,6 +105,11 @@ GEM
       activesupport (= 3.2.17)
       bundler (~> 1.0)
       railties (= 3.2.17)
+    rails_12factor (0.0.2)
+      rails_serve_static_assets
+      rails_stdout_logging
+    rails_serve_static_assets (0.0.2)
+    rails_stdout_logging (0.0.3)
     railties (3.2.17)
       actionpack (= 3.2.17)
       activesupport (= 3.2.17)
@@ -147,7 +155,10 @@ DEPENDENCIES
   browsercms (= 3.5.7)
   coffee-rails (~> 3.2.1)
   jquery-rails
+  meta-tags
+  pg
   rails (= 3.2.17)
+  rails_12factor
   sass-rails (~> 3.2.3)
   simple_form
   sqlite3

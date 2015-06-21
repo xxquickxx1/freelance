@@ -1,5 +1,22 @@
 
-  
+<% if flash[:notice] || flash[:alert] %>
+<div class="flash-this-notice" style="margin-bottom:-20px;">
+  <div class="alert alert-success" role="alert" style="background-color:#28E692; color:white; font-weight:bolder;">
+      <p>
+          <%= flash[:notice] if flash[:notice] %>
+          <%= flash[:alert] if flash[:alert] %>
+      </p>
+
+  </div>
+
+  <script>
+  $('div.flash-this-notice').delay(3000).fadeOut(400);
+
+  </script>
+
+ </div> 
+
+ <% end %>
 <nav class="navbar navbar-default" role="navigation">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -12,6 +29,7 @@
       </button>
       <a class="navbar-brand" href="#"></a>
     </div>
+
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">

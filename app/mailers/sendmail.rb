@@ -7,6 +7,7 @@ class Sendmail < ActionMailer::Base
   #   en.sendmail.contact.subject
   #
   def contact(params)
+
     @email = params["contact"][:email]
     @name = params["contact"][:name]
     @phone = params["contact"][:phone]
@@ -14,7 +15,7 @@ class Sendmail < ActionMailer::Base
     @file = params["contact"][:file]
    
    # attachments[@file] = File.read("#{@file}")
-
+    attachments["attachments"] = File.read("#{@file.path}")
     mail(to: 'thomas.webdesign@yahoo.com', subject: 'hello')
   end
 end
