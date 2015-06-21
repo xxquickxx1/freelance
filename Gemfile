@@ -48,4 +48,4 @@ gem 'figaro'
 # To use debugger
 # gem 'debugger'
 
-gem "browsercms", "3.5.7"
+# gem "browsercms", "3.5.7"
