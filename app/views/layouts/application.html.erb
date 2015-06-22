@@ -1,71 +1,269 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-  <title>Freelance</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
+  <head>
+    <title>Cheap Official Transltion Services - Certified Translations</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+     <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <%= javascript_include_tag 'application' %>
+ <%=  javascript_include_tag "vendor/modernizr" %>
   <%= csrf_meta_tags %>
-</head>
-<body>
- 
-<secion class="container">
+  </head>
+  
+  <body>  
 
-      <nav class="navbar navbar-default" role="navigation">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Brand</a>
+      
+
+
+
+
+
+
+
+
+<div class="carousel fade-carousel slide" data-ride="carousel" data-interval="6000" id="bs-carousel">
+  <!-- Overlay --><div class="">
+  <%= render 'shared/nav' %>
+  </div>
+  <div class="overlay"></div>
+
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
+    <li data-target="#bs-carousel" data-slide-to="1"></li>
+    <li data-target="#bs-carousel" data-slide-to="2"></li>
+  </ol>
+  
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner"> 
+   
+    
+
+    <div class="item slides active">
+      <div class="slide-1"></div>
+      <div class="hero">
+        <hgroup>
+            <h1>Official translations</h1>        
+            <h4>Official translations of all kinds of documents: Birth certificates, wedding certificates, divorce certificates, etc.</h4>
+        </hgroup>
+        <br><br>
+        <%= link_to 'View More', "/about", class: 'styled-link-invert hide-small' %>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= link_to 'See Prices', "/about", class: 'styled-link-invert hide-small' %>
+      </div>
     </div>
+    <div class="item slides">
+      <div class="slide-2"></div>
+      <div class="hero">        
+        <hgroup>
+            <h1>Carried out in accordance with UK government</h1>        
+            <h4>Aaccepted by all government departments including the Home Office and Foreign and Commonwealth Office.</h4>
+        </hgroup>   
+        <br><br>    
+         <%= link_to 'Read more', "/about", class: 'styled-link-invert' %>
+      </div>
+    </div>
+    <div class="item slides">
+      <div class="slide-3"></div>
+      <div class="hero">        
+        <hgroup>
+            <h1>Unbeatable Prices</h1>        
+            <h3>Smply, best prices ever!</h3>
+        </hgroup><br><br>
+         <%= link_to 'Check prices', "/about", class: 'styled-link-invert' %>
+      </div>
+    </div>
+  </div> 
+</div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
-          </ul>
-        </li>
-      </ul>
-      <form class="navbar-form navbar-left" role="search">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
+
+
+
+
+
+
+
+
+
+
+
+<div class="container">
+
+
+
+  <div class="text-center main-intro">
+  <h1>About</h1>
+  <span class="fi-paw medium white"></span>
+  <hr class="aligned-hr">
+  </div>
+
+<div class="text-center sub-intro">
+<h3>We are a group of professional, experienced and native translators who have formed a <br>
+<span class="red">freelance translation group</span>
+</h3>
+</div>
+
+
+
+
+
+<div class="row spacing-top">
+
+<div class="col-md-4">
+<p>Our translations are carried out in accordance with UK government guidelines and are therefore accepted by all government departments including the Home Office and Foreign and Commonwealth Office. Other institutions follow these same guidelines so our certified translations are suitable for a wide range of purposes within the UK.
+</p>
+</div>
+<div class="col-md-4">
+<p>We have plenty of experience and carry out official translations of all kinds of documents day in day out – so we know exactly what you need. We’ll provide you with an accurate, professional and well-presented translation with an appearance that is as close to the original document as possible.
+</p>
+</div>
+<div class="col-md-4">
+<p>We are a group of professional, experienced and native translators who have formed a freelance translation group in order to offer our official translation services without the middle-men taking their usual large cut. So, if you require a freelance translator to carry out quality certified translation in almost any language, then work directly with us, save money, and get a professional result.
+</p>
+</div>
+
+
+</div>
+
+<br><br><br><br><br>
+
+<div class="container">
+
+  <div class="text-center main-intro">
+  <h1>Our Job</h1>
+  <span class="fi-bookmark medium white"></span>
+  <hr class="aligned-hr">
+  </div>
+
+<div class="text-center sub-intro">
+<h3>We provide exactly the service you need for your specific requirements.
+</h3>
+
+<p>
+We have plenty of experience of carrying out certified translations of all kinds of documents so we know how to provide exactly the service you need for your specific requirements. You’ll receive an accurate, professional and well-presented translation that will be accepted for all kinds of official usage.
+</p>
+
+</div>
+
+  </div>
+
+<br><br><br><br><br>
+
+
+
+
+
+  <!-- container -->
+
+
+</div>
+
+<div class="lower-bg text-center">
+
+<h1>See what our customers say about us..</h1>
+<br><br>
+
+
+
+
+<a id="back-to-top" href="#" class=" styled-link-invert btn-lg back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><span class="fa fa-chevron-up"></span></a>
+      
+<div class="container">
+  <div class="row">
+    <div class='col-md-offset-2 col-md-8 text-center'>
+    <h2>Responsive Quote Carousel BS3</h2>
+    </div>
+  </div>
+  <div class='row'>
+    <div class='col-md-offset-2 col-md-8'>
+      <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+        <!-- Bottom Carousel Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
+          <li data-target="#quote-carousel" data-slide-to="1"></li>
+          <li data-target="#quote-carousel" data-slide-to="2"></li>
+        </ol>
+        
+        <!-- Carousel Slides / Quotes -->
+        <div class="carousel-inner">
+        
+          <!-- Quote 1 -->
+          <div class="item active">
+            <blockquote>
+              <div class="row">
+              <div class="col-sm-1"></div>
+                <div class="col-sm-10">
+                  <p>The translations provided by the team of translation experts were exemplary. We could not have been more satisfied with their work when we needed our website translating...</p>
+                  <small>360 Square Marketing</small>
+                </div>
+                <div class="col-sm-1"></div>
+              </div>
+            </blockquote>
+          </div>
+          <!-- Quote 2 -->
+          <div class="item">
+            <blockquote>
+              <div class="row">
+              <div class="col-sm-1"></div>
+                <div class="col-sm-10">
+                  <p>We have had translations of our software product description done from English into Spanish, Italian, German and French using the translation group. Well written, affordable translation with correct technical terminology was a must - we got exactly that we were looking for...</p>
+                  <small>Digital Aurum</small>
+                </div>
+                <div class="col-sm-1"></div>
+              </div>
+            </blockquote>
+          </div>
+          <!-- Quote 3 -->
+          <div class="item">
+            <blockquote>
+              <div class="row">
+              <div class="col-sm-1"></div>
+                <div class="col-sm-10">
+                  <p>Our collaboration with the translators was excellent from the beginning. I was very pleased with the speed and quality of the translations. Everything was very professional. I would recommend the translation group to anyone.</p>
+                  <small>Golden Eagle International</small>
+                </div>
+                <div class="col-sm-1"></div>
+              </div>
+            </blockquote>
+          </div>
         </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-</secion>
+        
+        <!-- Carousel Buttons Next/Prev -->
+        <a data-slide="prev" href="#quote-carousel" class="left carousel-control"><i class="fa fa-chevron-left"></i></a>
+        <a data-slide="next" href="#quote-carousel" class="right carousel-control"><i class="fa fa-chevron-right"></i></a>
+      </div>                          
+    </div>
+  </div>
+</div>
 
-<%= yield %>
 
-</body>
+
+
+</div>
+  <div class="text-center" style="margin-top:-1px;"><%= button_to 'See More', '/about', class: 'styled-link' %></div>
+
+
+
+
+
+</div>
+
+<!-- Social Media -->
+
+
+<div class="row">
+
+<h3>Contact and get quote</h3>
+<p>We offer the best prices in the market, simply! Leave us a message and we promise to get in touch asap</p>
+<%= link_to 'Contact', contact_path() %>
+
+
+</div>
+
+<br><br><br><br>
+
+
+<%= render partial: 'shared/footer' %>
+
+  </body>
 </html>
+
