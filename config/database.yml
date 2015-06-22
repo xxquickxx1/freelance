@@ -23,3 +23,5 @@ production:
   encoding: unicode
   database: freelance_production
   pool: 5
+  username: 
+  password: 
