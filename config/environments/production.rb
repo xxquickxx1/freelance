@@ -3,7 +3,7 @@ Freelance::Application.configure do
   # config.cms.site_domain = "www.example.com"
 
   # Configure your mail server's address below
-  config.action_mailer.smtp_settings = {:address => 'mail.yourmailserver.com', :domain => config.cms.site_domain}
+  config.action_mailer.smtp_settings = {:address => 'mail.yourmailserver.com', :domain => "localhost:3000"}
 
   # Settings specified here will take precedence over those in config/application.rb
 
