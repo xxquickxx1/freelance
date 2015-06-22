@@ -38,10 +38,27 @@ GEM
     activesupport (3.2.17)
       i18n (~> 0.6, >= 0.6.4)
       multi_json (~> 1.0)
+    ancestry (1.2.5)
+      activerecord (>= 2.2.2)
     arel (3.0.3)
     autoprefixer-rails (4.0.2.1)
       execjs
+    browsercms (3.5.7)
+      ancestry (~> 1.2.4)
+      ckeditor_rails (~> 3.6.4)
+      jquery-rails (~> 2.0)
+      paperclip (~> 3.0.3)
+      rails (>= 3.2.5, < 3.3.0)
+      sass-rails (~> 3.2.6)
+      term-ansicolor
     builder (3.0.4)
+    ckeditor_rails (3.6.4.1)
+      railties (~> 3.0)
+      thor (~> 0.14)
+    climate_control (0.0.3)
+      activesupport (>= 3.0)
+    cocaine (0.5.5)
+      climate_control (>= 0.0.3, < 1.0)
     coffee-rails (3.2.2)
       coffee-script (>= 2.2.0)
       railties (~> 3.2.0)
@@ -67,6 +84,12 @@ GEM
       actionpack (>= 3.0.0)
     mime-types (1.25.1)
     multi_json (1.10.1)
+    paperclip (3.0.4)
+      activemodel (>= 3.0.0)
+      activerecord (>= 3.0.0)
+      activesupport (>= 3.0.0)
+      cocaine (>= 0.0.2)
+      mime-types
     pg (0.17.1)
     polyglot (0.3.5)
     rack (1.4.5)
@@ -113,8 +136,11 @@ GEM
       rack (~> 1.0)
       tilt (~> 1.1, != 1.3.0)
     sqlite3 (1.3.10)
+    term-ansicolor (1.3.0)
+      tins (~> 1.0)
     thor (0.19.1)
     tilt (1.4.1)
+    tins (1.3.3)
     treetop (1.4.15)
       polyglot
       polyglot (>= 0.3.1)
@@ -128,6 +154,7 @@ PLATFORMS
 
 DEPENDENCIES
   autoprefixer-rails
+  browsercms (= 3.5.7)
   coffee-rails (~> 3.2.1)
   figaro
   jquery-rails
