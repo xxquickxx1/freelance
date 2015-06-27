@@ -1,12 +1,19 @@
 Freelance::Application.routes.draw do
 
 
-  root to: "home#index"
-  get "/home", to: 'home#index', as: :home
+  get "/testimonials", to: 'testimonials#index', as: :testimonials
+
+  get "/prices", to: 'prices#index', as: :prices
+
+  get "/about", to: 'about#index', as: :about
+    get "/home", to: 'home#index', as: :home
 
 
 post '/contact', to: 'contact#create'
 resources :contacts
+
+  root to: "home#index"
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

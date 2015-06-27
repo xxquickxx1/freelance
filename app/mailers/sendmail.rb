@@ -15,7 +15,7 @@ class Sendmail < ActionMailer::Base
     @file = params["contact"][:file]
    
    # attachments[@file] = File.read("#{@file}")
-    attachments["attachments"] = File.read("#{@file.path}")
+    attachments["attachments"] = File.read("#{@file.path}") if attachments["attachments"]
     mail(to: 'thomas.webdesign@yahoo.com', subject: 'hello')
   end
 end

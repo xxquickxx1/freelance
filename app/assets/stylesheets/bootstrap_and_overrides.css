@@ -53,3 +53,11 @@ z-index: 999;;
     
 
 }
+
+.navbar-default .navbar-nav>li>a{
+  color:white;
+}
+
+.navbar-default .navbar-nav>li>a:hover{
+  color:rgb(180,180,180);
+}
