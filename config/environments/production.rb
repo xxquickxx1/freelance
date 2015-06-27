@@ -30,10 +30,10 @@ config.assets.compile = ['*.js', '*.css']
     :address   => "smtp.mandrillapp.com",
     :port      => 587, # ports 587 and 2525 are also supported with STARTTLS
     :enable_starttls_auto => true, # detects and uses STARTTLS
-    :user_name => ENV["USERNAME"],
+    :user_name => ENV["USER_NAME"],
     :password  => ENV["USER_PASSWORD"], # SMTP password is any valid API key
     :authentication => 'login', # Mandrill supports 'plain' or 'login'
-    :domain => 'localhost:3000', # your domain to identify your server when connecting
+    :domain => 'https://thawing-stream-5982.herokuapp.com', # your domain to identify your server when connecting
   }
 
   # Defaults to nil and saved in location specified by config.assets.prefix
