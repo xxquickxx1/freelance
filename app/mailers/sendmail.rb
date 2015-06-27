@@ -1,5 +1,5 @@
 class Sendmail < ActionMailer::Base
-  default from: "from@example.com"
+  default from: "website@example.com"
 
   # Subject can be set in your I18n file at config/locales/en.yml
   # with the following lookup:
@@ -16,6 +16,6 @@ class Sendmail < ActionMailer::Base
    
    # attachments[@file] = File.read("#{@file}")
     attachments["attachments"] = File.read("#{@file.path}") if attachments["attachments"]
-    mail(to: 'thomas.webdesign@yahoo.com', subject: 'hello')
+    mail(to: 'thomas.webdesign@yahoo.com', subject: 'hello', from: "#{@email}")
   end
 end

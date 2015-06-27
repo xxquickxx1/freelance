@@ -48,7 +48,7 @@
             <h4>Official translations of all kinds of documents: Birth certificates, wedding certificates, divorce certificates, etc.</h4>
         </hgroup>
         <br><br>
-        <%= link_to 'View More', "/about", class: 'styled-link-invert hide-small' %>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= link_to 'See Prices', "/about", class: 'styled-link-invert hide-small' %>
+        <%= link_to 'View More', "/about", class: 'styled-link-invert hide-small' %>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= link_to 'See Prices', "/prices", class: 'styled-link-invert hide-small' %>
       </div>
     </div>
     <div class="item slides">
@@ -255,7 +255,9 @@ We have plenty of experience of carrying out certified translations of all kinds
 <hr>
 <h3>Contact and get quote</h3>
 <p>We offer the best prices in the market, simply! Leave us a message and we promise to get in touch asap</p>
-<%= link_to 'Contact', contact_path() %>
+<a data-toggle="modal" data-target="#primary" href="#">
+          Contact
+        </a>
 
 
 </div>
